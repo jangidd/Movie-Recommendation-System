@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">
+
+    </script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet"
+        type="text/css" />
+    <title>Movie Recommender</title>
+</head>
+
+<body>
+    <form form action="{{ url_for('predict')}}" method="post">
+        <div class="input-field">
+            <input type="text" id="tags" name="mov" autocomplete="off" required />
+            <label for="tags">Search movies</label>
+        </div>
+        <button>Search</button>
+    </form>
+    <script>
+
+        $(function () {
+
+            var availableTags = [
+
+                {% for movies in movies_data %} 
+
+            "{{movies}}",
+
+            {% endfor %}
+
+    ];
+
+        $("#tags").autocomplete({
+
+            source: availableTags
+
+        }); 
+
+  } );
+
+    </script>
+
+</body>
+
+</html>

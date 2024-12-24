@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/movie.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title-img" ></div>
+    <div class="container">
+        <header class="logo">Movie<span>Recommender</span></header>
+        <section class="title">
+            <div class="title img">
+                <img src="https://image.tmdb.org/t/p/w500/{{movie_poster}}" alt="Movie Poster">
+                <h2>{{title}}</h2>
+            </div>
+        </section>
+        <h2 class="directors">Director</h2>
+        <section class="director img">
+            <div class="content">
+                <div class="director img">
+                    <img src="https://image.tmdb.org/t/p/w500/{{crew_poster}}" alt="Director Poster">
+                </div>
+                <p>{{crew}}</p>
+            </div>
+        </section>
+        <h2 class="actors">Actors</h2>
+        <section class="credit">
+            <div class="feature left">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{cast_poster[0]}}" alt="Cast Poster">
+                    <p>{{cast[0]}}</p>
+                </div>
+            </div>
+            <div class="feature right">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{cast_poster[1]}}" alt="Cast Poster">
+                    <p>{{cast[1]}}</p>
+                </div>
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{cast_poster[2]}}" alt="Cast Poster">
+                    <p>{{cast[2]}}</p>
+                </div>
+            </div>
+            <div class="feature right">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{cast_poster[3]}}" alt="Cast Poster">
+                    <p>{{cast[3]}}</p>
+                </div>
+            </div>
+        </section>
+       <h2 class=recommendation>Recommenderd movies</h2>>
+        <section class="recommender">
+            <div class="feature left">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{recommender_poster[0]}}" alt="Cast Poster">
+                    <p>{{recommended_movies[0]}}</p>
+                </div>
+            </div>
+            <div class="feature right">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{recommender_poster[1]}}" alt="Cast Poster">
+                    <p>{{recommended_movies[1]}}</p>
+                </div>
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{recommender_poster[2]}}" alt="Cast Poster">
+                    <p>{{recommended_movies[2]}}</p>
+                </div>
+            </div>
+            <div class="feature right">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{recommender_poster[3]}}" alt="Cast Poster">
+                    <p>{{recommended_movies[3]}}</p>
+                </div>
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{recommender_poster[4]}}" alt="Cast Poster">
+                    <p>{{recommended_movies[4]}}</p>
+                </div>
+            </div>
+            <div class="feature right">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{recommender_poster[5]}}" alt="Cast Poster">
+                    <p>{{recommended_movies[5]}}</p>
+                </div>
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{recommender_poster[6]}}" alt="Cast Poster">
+                    <p>{{recommended_movies[6]}}</p>
+                </div>
+            </div>
+            <div class="feature right">
+                <div class="content">
+                    <img src="https://image.tmdb.org/t/p/w500/{{recommender_poster[7]}}" alt="Cast Poster">
+                    <p>{{recommended_movies[7]}}</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
